@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page </title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand fs-3 fw-bold" href="/"><img src="images/globe.png" /> Sky Holidays</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-3" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/register">Register</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <h1 style="text-align: center; font-family: Ink Free; font-weight: bold;">Register Here</h1>
+    <div class="page">
+      <form class="formreg" action="/registerAction" method="post">
+        <br>
+       
+        <div class="rowreg">
+          <div class="colreg">
+            <label class="label-textreg" htmlFor="">First Name</label>
+            <input class="form-inputreg" type="text" name="firstname" id="" required />
+          </div>
+          <div class="colreg">
+            <label class="label-textreg" htmlFor="">Last Name</label>
+            <input class="form-inputreg" type="text" name="lastname" id="" required />
+          </div>
+        </div>
+        <div class="rowregd">
+          <div class="colreg">
+          <label class="label-textreg" htmlFor=''>Date of Birth</label>
+          <input class='form-inputregd' type="date" name="dob" id=""required/>
+          </div>
+        
+        <div class="rowregad">
+          <div class="colreg">
+        <label for="w3review">Address</label>
+
+        <textarea id="" name="address"  cols="30">
+        </textarea> 
+      </div>
+    </div></div>
+          
+        
+        <br>
+
+        <div class="rowreg">
+          <div class="colreg">
+            <label class="label-textreg" htmlFor="">Email</label>
+            <input class="form-inputreg" type="email" name="email" id="" required />
+          </div>
+          
+
+          <div class="colreg">
+            <label class="label-textreg" htmlFor="">Mobile</label>
+            <input class="form-inputreg" type="tel" name="mobile" id="" required />
+          </div>
+        </div>
+        <div class="rowreg">
+          <div class="colreg">
+            <label class="label-textreg" htmlFor="">New Password</label>
+            <input
+              class="form-inputreg"
+              type="password"
+              name="newpassw"
+              id=""
+              required
+            />
+          </div>
+          <div class="colreg">
+            <label class="label-textreg" htmlFor="">Confirm Password</label>
+            <input
+              class="form-inputreg"
+              type="password"
+              name="cnfpassw"
+              id=""
+              required
+            />
+          </div>
+        </div>
+
+        <br />
+
+        <div class="rowreg">
+          <button class="btnreg" type="submit">Register</button>
+          <button class="btnreg" >
+            <a style="text-decoration: none" href="/">Back to Home</a>
+          </button>
+          
+        </div>
+      </form>
+      
+    </div> <br><br>
+
+
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+          <div class="row gy-4 gx-5">
+            
+            <div class="col-lg-2 col-md-6">
+              <h5 class="h3 text-primary mb-3 fw-bold">Sky Holidays</h5> <br>
+              <ul class="list-unstyled text-muted">
+                <li><a href="/">Home</a></li> <br>
+                <li><a href="/register">Register Now!</a></li>
+                
+              </ul>
+            </div>
+            
+            <hr class="text-white" />
+          </div>
+        </div>
+        <p class="small text-white text-center mb-0">
+          &copy; Copyrights. All rights reserved.
+          <a href="/">Sky Holidays</a>
+        </p>
+      </footer> 
+</body>
+</html>
